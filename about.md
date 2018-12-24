@@ -4,6 +4,6 @@ title: About
 permalink: /about/
 ---
 
-I am freelance developer. Currently doing more in backend, focused in Python and Django.
+I am data scientist and machine learning engineer working in London.
 
-email: agus[at]python.web.id
+Please use [LinkedIn](https://www.linkedin.com/in/joshlevykramer) if you wish to contact me.
