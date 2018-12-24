@@ -16,20 +16,20 @@ collections:
     permalink: /project/:path/
 
 social:
-    - icon: fa-facebook
-      link: "#"
-    - icon: fa-twitter
-      link: "https://twitter.com/agusmakmun6"
+    #- icon: fa-facebook
+    #  link: "#"
+    #- icon: fa-twitter
+    #  link: "https://twitter.com/agusmakmun6"
     - icon: fa-linkedin
-      link: "https://www.linkedin.com/in/summonagus"
+      link: "https://www.linkedin.com/in/joshlevykramer"
     - icon: fa-stack-exchange
-      link: "#"
+      link: "https://stackoverflow.com/users/1110328/joshlk"
     - icon: fa-github
-      link: "https://github.com/agusmakmun"
+      link: "https://github.com/joshlk"
 
-share:
-  twitter_username: agusmakmun6
-  fb_appid: 1749788565247320
+#share:
+#  twitter_username: agusmakmun6
+#  fb_appid: 1749788565247320
 
 urls:
     - text: About Me
