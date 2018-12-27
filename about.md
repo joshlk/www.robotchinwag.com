@@ -5,7 +5,7 @@ permalink: /about/
 image: josh_levy_kramer.png
 ---
 
-![Josh Levy-Kramer](https://raw.githubusercontent.com/joshlk/robotchinwag.com/master/static/img/josh_levy_kramer.png  "Josh Levy-Kramer"){:height="100%" width="auto" max-height="200px"}
+![Josh Levy-Kramer](https://raw.githubusercontent.com/joshlk/www.robotchinwag.com/master/static/img/josh_levy_kramer.png  "Josh Levy-Kramer"){:height="200px" width="auto"}
 
 I am data scientist and machine learning engineer working in London.
 
