@@ -11,4 +11,3 @@ I am a Data Scientist and Machine Learning engineer working in London.
 
 Please use [LinkedIn](https://www.linkedin.com/in/joshlevykramer) if you wish to contact me.
 
-[GitHub](https://github.com/joshlk) \| [LinkedIn](https://www.linkedin.com/in/joshlevykramer) \| [Stack Overflow](https://stackoverflow.com/users/1110328/joshlk)
