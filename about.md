@@ -10,3 +10,11 @@ image: josh_levy_kramer.png
 I am a Data Scientist and Machine Learning engineer working in London.
 
 Please use [LinkedIn](https://www.linkedin.com/in/joshlevykramer) if you wish to contact me.
+
+<div class="social">
+  <ul>
+    {% for link in site.social %}
+      <li><a href="{{ link.link }}" target="_blank"><i class="fa {{ link.icon }}"></i></a></li>
+    {% endfor %}
+  </ul>
+</div>
