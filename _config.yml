@@ -36,7 +36,7 @@ urls:
       url: /about/
     #- text: My Projects
     #  url: /projects/
-    - text: XML Feed
+    - text: RSS Feed
       url: /feed.xml
 
 url: "https://www.robotchinwag.com"
