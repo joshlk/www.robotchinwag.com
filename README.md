@@ -1,7 +1,12 @@
 ## Robot-Chinwag
 Source code of www.robotchinwag.com
 
+Workflow:
+* Use https://kramdown.herokuapp.com/ to edit and prep markdown posts
+* Use https://imgur.com/upload to upload images so can see in online editor
+
 Template folked from https://github.com/agusmakmun/agusmakmun.github.io
+Below is folked README
 
 ---
 
