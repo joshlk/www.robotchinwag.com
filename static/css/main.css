@@ -175,3 +175,26 @@ div.col-sm-3 img.profile-avatar {
 .profile-about {
 	font-size: 14px;
 }
+
+
+/* ----- Added by Josh */
+/*
+For image captions in markdown:
+![](path_to_image)
+*image_caption*
+
+This is converted to the following HTML
+<p>
+    <img src="path_to_image" alt>
+    <em>image_caption</em>
+</p>
+
+Which will be picked up by the following CSS
+*/
+img + em {
+  text-align: center;
+  font-size: .8rem;
+  color: light-grey;
+  font-style: normal;
+}
+
