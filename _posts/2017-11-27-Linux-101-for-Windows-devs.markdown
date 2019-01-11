@@ -68,7 +68,7 @@ A [full guide to Linux commands](https://www.dedoimedo.com/computers/ultimate-li
 
 # Drives and mounts
 
-![Linux filesystem strucutre](https://i.imgur.com/4mh1CDT.png){:max-width="65%" height="auto"}
+![Linux filesystem strucutre](https://i.imgur.com/4mh1CDT.png){:style="max-width=80%; height=auto;"}
 
 
 Possibly one of the most confusing things is the lack of drive letters in the file system i.e. there are none. In Windows, each drive is assigned its own letter. In fact, even network shares can be assigned their own drive letters e.g. C:\, D:\, ...
