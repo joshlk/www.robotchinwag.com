@@ -28,7 +28,7 @@ In a nutshell...
 
 ![Simplified history of Unix-like operating systems. Linux shares similar architecture and concepts (as part of the POSIX standard) but does not share non-free source code with the original Unix or MINIX.](https://i.imgur.com/QZBZlWW.png){:style="max-width:75%; height:auto; display: block; margin-left: auto; margin-right: auto;"}
 
-![Linux Distribution Timeline](https://i.imgur.com/7hQtb9h.png){ :style="max-width:12%; height:auto; float: right; clear: right;"}
+![Linux Distribution Timeline](https://i.imgur.com/7hQtb9h.png){:style="max-width:12%; height:auto; float: right; clear: right;"}
 
  Unix was developed in the 70s and is the base for Linux, Mac and other systems - which are know as UNIX-like.
 
