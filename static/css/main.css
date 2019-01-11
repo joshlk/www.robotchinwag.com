@@ -192,11 +192,13 @@ This is converted to the following HTML
 Which will be picked up by the following CSS
 */
 img + em {
-	display: block;
-	text-align: center;
-	/*   font-size: .8rem; */
-	color: light-grey;
-	font-style: normal;
-	font-weight: bold;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  /*   font-size: .8rem; */
+  color: light-grey;
+  font-style: normal;
+  font-weight: bold;
 }
 
