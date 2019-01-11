@@ -4,6 +4,7 @@ Source code of www.robotchinwag.com
 Workflow:
 * Use https://kramdown.herokuapp.com/ to edit and prep markdown posts
 * Use https://imgur.com/upload to upload images so can see in online editor. (Obtain the image link and then prefix with `i.` and suffix with `.png`. i.e. https://imgur.com/LJmcb5c -> https://i.imgur.com/LJmcb5c.png
+* Use Chrome inspect to work out CSS elements
 
 Template folked from https://github.com/agusmakmun/agusmakmun.github.io
 Below is folked README
