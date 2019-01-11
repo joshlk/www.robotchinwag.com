@@ -24,49 +24,52 @@ In a nutshell...
 * __Market leader for cloud servers__
     * [92% of AWS instances are Linux](http://thecloudmarket.com/stats#/totals)
 
-## Linux, Unix, Mac... whats the difference
+# Linux, Unix, Mac... whats the difference
 
 ![Simplified history of Unix-like operating systems. Linux shares similar architecture and concepts (as part of the POSIX standard) but does not share non-free source code with the original Unix or MINIX.](https://i.imgur.com/QZBZlWW.png){:height="300px" width="auto"}
 
-
-
 Unix was developed in the 70s and is the base for Linux, Mac and other systems - which are know as UNIX-like. 
 
-![Linux Distribution Timeline](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Linux_Distribution_Timeline.svg/232px-Linux_Distribution_Timeline.svg.png){: .align-right height="300px" width="auto"} Linux itself is not one thing - it can colloquially reference to the Linux kernel, a Linux system, or a Linux distribution. In its most technical sense Linux is just a kernel and ecosystem of components which are compatible with the it. Each component can be added or removed at will as the ecosystem is open source and modular by design. For example in Linux you can separate the graphical interface away from the core of the operating system so that one does not come with another. This is not possible in Windows. 
+<!--- 
+![Linux Distribution Timeline](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Linux_Distribution_Timeline.svg/232px-Linux_Distribution_Timeline.svg.png){: .align-right height="300px" width="auto"}
+--->
 
-Because each component can be swapped in or out a large ecosystem of Linux distributions exist, each with their own unique combination of programs and capabilities. Have a look at the image on the right which shows the vast landscape of different "distos" and how then relate to each other. The most important distos are:
+Linux itself is not one thing - it can colloquially reference to the Linux kernel, a Linux system, or a Linux distribution. In its most technical sense, Linux is just a kernel and ecosystem of components which are compatible with it. Each component can be added or removed at will as the ecosystem is open source and modular by design. For example,  you can separate the graphical interface away from the core of the operating system - one does not necessarily come with another. This is not possible in Windows. 
 
-* Ubuntu - Debian based disto. Good desktop and server support
+Because each component can be swapped in or out, a large ecosystem of Linux distributions exists, each with their own unique combination of programs and capabilities. Have a look at the image on the right which shows the vast landscape of different "distros" and how they relate to each other. The most important distros are:
+
+* Ubuntu - Debian based distro. Good desktop and server support
 * Red Hat Enterprise Linux (RHEL) - Commercial (not free) product, has good enterprise support, focus on stability
-* CentOS - 100% RHEL compatible, its basically a free version of RHEL. Focused on reliability and stability
-* Fedora - RedHat based disto. Focused on quick releases and new features
+* CentOS - 100% RHEL compatible, it's basically a free version of RHEL. Focused on reliability and stability
+* Fedora - RedHat based distro. Focused on quick releases and new features
 
-RHEL used to be the dominate leader, however recently Ubuntu has caught up and [Ubuntu is now the market leader in cloud computing](http://thecloudmarket.com/stats#/totals).
+RHEL used to be the dominant leader, however recently Ubuntu has caught up and [Ubuntu is now the market leader in cloud computing](http://thecloudmarket.com/stats#/totals).
 
 # Linux terminal
 
-![Linux terminal](https://i.imgur.com/aqS9BjH.png)
+![Linux terminal](https://i.imgur.com/aqS9BjH.png){:height="350px" width="auto"}
 *Is this it 🤔*
 
-The first thing you will notice is that Linux is primarily a command line (**terminal** or **shell**) based operating system. In contrast to Windows which is based around a graphical user interface (GUI) with windows for each program. This at first seems like a throw back the 70s.
+The first thing you will notice is that Linux is primarily a command line based operating system. In contrast to Windows which is based around a graphical user interface (GUI) with windows for each program. This at first seems like a throw back to the 70s.
 
-It's very daunting if you have has never used the terminal before, however the terminal is a much more powerful tool for the advanced user (you) and here are some point to consider:
+It's very daunting if you have has never used the terminal before, however, the terminal is a much more powerful tool for the advanced user (you) and here is some point to consider:
 
-* Terminals require more upfront learning. You need to learn at least a handful of commands as you cant just feel your away around the interface. But once the upfront costs are made you will become much more productive controlling and manipulating the machine.
-* Flexible: GUIs generally only have one way of doing a certain thing, while in the terminal there are usually 101 ways of doing the same thing. This flexibility allows you to be more productive, as the terminal includes a library of standard components that can strung together to make complex tasks simple
+* Terminals require more upfront learning. You need to learn at least a handful of commands as you cant just feel you're way around the interface. But once the upfront costs are made you will become much more productive controlling and manipulating the machine.
+* Flexible: GUIs generally only have one way of doing a certain thing, while in the terminal there are usually 101 ways of doing the same thing. This flexibility allows you to be more productive, as the terminal includes a library of standard components that can be strung together to make complex tasks simple
 * Never repeat yourself: you have to repeat yourself a lot in GUIs and can't always automate things. At the terminal everything can be scripted - never do the same task more than twice
-* Resources: a GUI requires a large amount of system resources and aren't necessary especially for headless machines
+* Resources: a GUI requires a large number of system resources and aren't always necessary - especially for headless machines
 
-A [full guide to Linux commands](https://www.dedoimedo.com/computers/ultimate-linux-guide-for-windows-users.html#mozTocId796223) is out of scope of this article, but to be productive from the beginning remember these shortcuts that are usually missed by beginners:
+A [full guide to Linux commands](https://www.dedoimedo.com/computers/ultimate-linux-guide-for-windows-users.html#mozTocId796223) is out of the scope of this article, but to be productive from the beginning remember these shortcuts that are usually missed by beginners:
 
 * **Ctrl+R**: Reverse search command history
 * **Ctrl+A**: Go to the beginning of the line
 * **Ctrl+E**: Go to the end of the line.
 * **Grep**: Use in conjunction with a pipe to search a long text output of another process. e.g. ps | grep processname
 
-## Drives and mounts
+# Drives and mounts
 
-> image here: 
+![](https://i.imgur.com/4mh1CDT.png){:max-width="80%" height="auto"}
+
 
 Possibly one of the most confusing things is the lack of drive letters in the file system i.e. there are none. In Windows, each drive is assigned its own letter. In fact, even network shares can be assigned their own drive letters e.g. C:\, D:\, ...
 
@@ -74,7 +77,7 @@ In Linux, the boot drive (i.e. the main drive) is the only drive that is visible
 
 Typically, a drive will be mounted in the /mnt folder but in it can be done anywhere. e.g. /mnt/d_drive Further info on mounting a drive.
 
-## Paths
+# Paths
 
 Generally, paths are very similar to Windows, here are two examples:
 
@@ -88,7 +91,7 @@ Generally, paths are very similar to Windows, here are two examples:
 1. The file extension in Windows dictates how the OS will open the file. This isn't the case in Linux, people just include a file extension for connivance and just indicates the type of file. For text based executables the file type is described using the she-bang, for example python files typically have this included as the first line:
 `#!/usr/bin/env python`
 
-## Users and permissions
+# Users and permissions
 
 Linux is a multi-user OS that is based on the Unix concepts of file ownership and permissions to provide security at the file system level.
 
