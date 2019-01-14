@@ -62,7 +62,7 @@ A [full guide to Linux commands](https://www.dedoimedo.com/computers/ultimate-li
 * **Ctrl+R**: Reverse search command history
 * **Ctrl+A**: Go to the beginning of the line
 * **Ctrl+E**: Go to the end of the line.
-* **Grep**: Use in conjunction with a pipe to search a long text output of another process. e.g. to search for python processes currently running "`ps | grep python`"
+* **Grep**: Use in conjunction with a pipe to search a long text output of another process. e.g. to search for python processes currently running `ps | grep python`
 
 # Drives and mounts
 
