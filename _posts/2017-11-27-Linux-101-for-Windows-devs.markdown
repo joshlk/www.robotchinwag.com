@@ -62,7 +62,7 @@ A [full guide to Linux commands](https://www.dedoimedo.com/computers/ultimate-li
 * **Ctrl+R**: Reverse search command history
 * **Ctrl+A**: Go to the beginning of the line
 * **Ctrl+E**: Go to the end of the line.
-* **Grep**: Use in conjunction with a pipe to search a long text output of another process. e.g. to search for python processes currently running `ps | grep python`
+* **Grep**: Use in conjunction with a pipe to search a long text output of another process. e.g. to search for python processes currently running "`ps | grep python`"
 
 # Drives and mounts
 
@@ -72,7 +72,7 @@ Possibly one of the most confusing things is the lack of drive letters in the fi
 
 In Linux, the boot drive (i.e. the main drive) is the only drive that is visible at first and starts at the top of the file system which is indicated by the first slash `/` – this is the equivalent to the `C:\` drive on my Windows systems. All other drives are mounted or added into this file system.
 
-Typically, a drive will be [mounted](https://www.lifewire.com/uses-of-linux-command-mount-2201110) in the `/mnt` folder but in it can be done anywhere. e.g. `/mnt/d_drive`. Further info on mounting a drive.
+Typically, a drive will be [mounted](https://www.lifewire.com/uses-of-linux-command-mount-2201110) in the `/mnt` folder but in it can be done anywhere. e.g. `/mnt/d_drive`.
 
 # File paths
 
@@ -111,7 +111,7 @@ Aside from the *Mode* column, this listing is fairly easy to understand. To help
 
 So for each permission class (user, group and other) its specified if a user can read, write or execute that file. You can change the mode and ownership of a file using the [chmod and chown commands](https://www.pluralsight.com/blog/it-ops/linux-file-permissions).
 
-**Newbies will typically hit a lot of errors because a certain file doesn’t have the right permissions. Check this first if you run into trouble.**
+> Newbies will typically hit a lot of errors because a certain file doesn’t have the right permissions. Check this first if you run into trouble.
 
 # Text files
 
@@ -120,7 +120,9 @@ So for each permission class (user, group and other) its specified if a user can
 
 There is one big difference between Linux and Windows text files: Windows text files use a carriage return followed by a line feed ASCII characters ("\r\n") to dictate the ending of a line, while Unix uses just line feed ("\n").
 
-This can cause a lot of issues when working with text files, especially CSVs and when moving files between Windows and Linux. A lot of programs automatically deal with it while others will not. You can generally convert between the two using a text editor like [Notepad++](https://notepad-plus-plus.org/) or [Sublime](https://www.sublimetext.com/) or a command line utility. A typical problem will be all text is rendered on a single line or that extra funny symbols are present in the file.
+This can cause a lot of issues when working with text files, especially CSVs and when moving files between Windows and Linux. A lot of programs automatically deal with it while others will not. You can generally convert between the two using a text editor like [Notepad++](https://notepad-plus-plus.org/) or [Sublime](https://www.sublimetext.com/) or a command line utility.
+
+> A typical problem will be all text is rendered on a single line or that extra funny symbols are presented in the file.
 
 # Installing programs
 
@@ -132,7 +134,7 @@ sudo apt-get install postgresql
 
 Thats it! No installation wizards, no downloading. You do however require `sudo` access as discussed above.
 
-__Yer seriously that it 🚀__
+> Yer seriously that it 🚀
 
 # Environment variables
 
@@ -148,6 +150,8 @@ This means that an environment variable that is changed in a script or compiled 
 
 This is contrast to Windows, whereby changing an enviroment variable changes the global state in the Windows registry and therefore effects all other programs. This is important as the Windows registry acts like a central database for the OS and running programs which grows larger over time when the user installs more programs. This is one of the reason why Windows systems slow up over time and need to be whiped clean.
 
+> The abstance of a central database or registry is in part why Linux is more stable when compared to Windows.
+
 # Roundup
 
 Overall Linux and in part Mac, is a more productive, stable and secure enviroment for the dev or data scientist.
@@ -159,5 +163,5 @@ Let me leave you with one last nuget of information... how many of the top 500 s
 ---
 *Josh Levy-Kramer*
 
-Unless otherwise stated, images are attributed via a link
+Unless otherwise stated, images are attributed via a link (click on them)
 
