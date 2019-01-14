@@ -26,15 +26,15 @@ In a nutshell...
 
 # Linux, Unix, Mac... whats the difference
 
-![Simplified history of Unix-like operating systems. Linux shares similar architecture and concepts (as part of the POSIX standard) but does not share non-free source code with the original Unix or MINIX.](https://i.imgur.com/QZBZlWW.png){:style="max-width:75%; height:auto; display: block; margin-left: auto; margin-right: auto;"}
+[![Simplified history of Unix-like operating systems. Linux shares similar architecture and concepts (as part of the POSIX standard) but does not share non-free source code with the original Unix or MINIX.](https://i.imgur.com/QZBZlWW.png){:style="max-width:75%; height:auto; display: block; margin-left: auto; margin-right: auto;"}](https://en.wikipedia.org/wiki/File:Unix_history.svg)
 
-![Linux Distribution Timeline](https://i.imgur.com/7hQtb9h.png){:style="max-width:12%; height:auto; float: right; clear: right;"}
+[![Linux Distribution Timeline](https://i.imgur.com/7hQtb9h.png){:style="max-width:12%; height:auto; float: right; clear: right;"}](https://en.wikipedia.org/wiki/List_of_Linux_distributions#/media/File:Linux_Distribution_Timeline.svg)
 
- Unix was developed in the 70s and is the base for Linux, Mac and other systems - which are know as UNIX-like.
+Unix was developed in the 70s and is the base for Linux, Mac and other systems - which are know as UNIX-like - as can been seen in the above timeline.
 
-Linux itself is not one thing - it can colloquially reference to the Linux kernel, a Linux system, or a Linux distribution. In its most technical sense, Linux is just a kernel and ecosystem of components which are compatible with it. Each component can be added or removed at will as the ecosystem is open source and modular by design. For example,  you can separate the graphical interface away from the core of the operating system - one does not necessarily come with another. This is not possible in Windows. 
+Linux itself is not one thing - it can colloquially reference to the Linux kernel, a Linux system, or a Linux distribution. In its most technical sense, Linux is just a kernel and ecosystem of components which are compatible with it. Each component can be added or removed at will as the ecosystem is open source and modular by design. For example, you can separate the graphical interface away from the core of the operating system - one does not necessarily come with another. This is not possible in Windows. 
 
-Because each component can be swapped in or out, a large ecosystem of Linux distributions exists, each with their own unique combination of programs and capabilities. Have a look at the image on the right which shows the vast landscape of different "distros" and how they relate to each other. The most important distros are:
+Because each component can be swapped in or out, a large ecosystem of Linux distributions exists, each with their own unique combination of programs and capabilities. Have a look at the image on the right which shows the vast landscape of different "distros" and how they relate to each other - as you can see the variation is huge. The most important distros are:
 
 * Ubuntu - Debian based distro. Good desktop and server support
 * Red Hat Enterprise Linux (RHEL) - Commercial (not free) product, has good enterprise support, focus on stability
@@ -45,7 +45,7 @@ RHEL used to be the dominant leader, however recently Ubuntu has caught up and [
 
 # Linux terminal
 
-![Linux terminal](https://i.imgur.com/aqS9BjH.png){:height="350px" width="auto"}
+![Linux terminal](https://i.imgur.com/aqS9BjH.png){:style="max-width:75%; height:auto; display: block; margin-left: auto; margin-right: auto;"}
 *Is this it 🤔*
 
 The first thing you will notice is that Linux is primarily a command line based operating system. In contrast to Windows which is based around a graphical user interface (GUI) with windows for each program. This at first seems like a throw back to the 70s.
@@ -62,39 +62,40 @@ A [full guide to Linux commands](https://www.dedoimedo.com/computers/ultimate-li
 * **Ctrl+R**: Reverse search command history
 * **Ctrl+A**: Go to the beginning of the line
 * **Ctrl+E**: Go to the end of the line.
-* **Grep**: Use in conjunction with a pipe to search a long text output of another process. e.g. ps | grep processname
+* **Grep**: Use in conjunction with a pipe to search a long text output of another process. e.g. to search for python processes currently running "`ps | grep python`"
 
 # Drives and mounts
 
 ![Linux filesystem strucutre](https://i.imgur.com/4mh1CDT.png){:style="max-width:75%; height:auto; display: block; margin-left: auto; margin-right: auto;"}
 
-Possibly one of the most confusing things is the lack of drive letters in the file system i.e. there are none. In Windows, each drive is assigned its own letter. In fact, even network shares can be assigned their own drive letters e.g. C:\, D:\, ...
+Possibly one of the most confusing things is the lack of drive letters in the file system i.e. there are none. In Windows, each drive is assigned its own letter. In fact, even network shares can be assigned their own drive letters e.g. `C:\`, `D:\`, ...
 
-In Linux, the boot drive (i.e. the main drive) is the only drive that is visible at first and starts at the top of the file system which is indicated by the first slash “/” – this is the equivalent to the C:\ drive on my Windows systems. All other drives are mounted or added into this file system.
+In Linux, the boot drive (i.e. the main drive) is the only drive that is visible at first and starts at the top of the file system which is indicated by the first slash `/` – this is the equivalent to the `C:\` drive on my Windows systems. All other drives are mounted or added into this file system.
 
-Typically, a drive will be mounted in the /mnt folder but in it can be done anywhere. e.g. /mnt/d_drive Further info on mounting a drive.
+Typically, a drive will be [mounted](https://www.lifewire.com/uses-of-linux-command-mount-2201110) in the `/mnt` folder but in it can be done anywhere. e.g. `/mnt/d_drive`. Further info on mounting a drive.
 
-# Paths
+# File paths
 
 Generally, paths are very similar to Windows, here are two examples:
 
-| Linux | /Users/Josh/git/project/example.txt |
-| Windows     | C:\Users\Josh\git\project\example.txt |
+Linux       |  `/Users/Josh/git/project/example.txt`
+Windows     |  `C:\Users\Josh\git\project\example.txt`
+
+Things to note:
 
 1. Paths are case sensitive: you can have multiple files with the different case variations “file”, “File”. This is also important when sharing documents between Windows and Linux and activating autocomplete in bash
 1. Paths must use forward slash “/”. Windows can actually use both forward and back slashes but it is custom to use backslashes e.g. “C:\temp”. If your writing programs that need to compatible with both Linux and Windows use forward slashes
 1. The current working directory can be referenced with a single dot. Such as as “./file”
 1. A users home directory can be referenced using the tilde-prefix e.g. "~/". Note however this is a Bash shortcut and wont work in the wider system. If in doubt use the full path expression.
-1. The file extension in Windows dictates how the OS will open the file. This isn't the case in Linux, people just include a file extension for connivance and just indicates the type of file. For text based executables the file type is described using the she-bang, for example python files typically have this included as the first line:
-`#!/usr/bin/env python`
+1. The file extension in Windows dictates how the command line will execute a file - this isn't the case in Linux. For text based executables the file type is described using the she-bang, for example python files typically have this included as the first line of the file e.g. `#!/usr/bin/env python`. This directs the command line to use the process `/usr/bin/env python` to execute the file
 
 # Users and permissions
 
 Linux is a multi-user OS that is based on the Unix concepts of file ownership and permissions to provide security at the file system level.
 
-In Linux, there are two types of users: *system users* and *regular users*. Traditionally, system users are used to run non-interactive or background processes on a system, while regular users used for logging in and running processes interactively (i.e. through the command line). An easy way to view all of the users on a system is to look at the contents of the `/etc/passwd` file using the command:  `cat /etc/passwd`
+In Linux, there are two types of users: *system users* and *regular users*. Traditionally, system users are used to run non-interactive or background processes on a system, while regular users used for logging in and running processes interactively (i.e. through the command line). An easy way to view all of the users on a system is to look at the contents of `/etc/passwd` using the command:  `cat /etc/passwd`
 
-In addition to the two user types, there is the *superuser*, or *root* user, that has the ability to override any file ownership and permission restrictions. In practice, this means that the superuser has the rights to access anything on its own server. This user is used to make system-wide changes, and must be kept secure. Some operations, however, do require super-user access and this can be granted temporarily using the sudo command – for example when installing packages see below.
+In addition to the two user types, there is the *superuser*, or *root* user, that has the ability to override any file ownership and permission restrictions. In practice, this means that the superuser has the rights to access anything on its own server. This user is used to make system-wide changes, and must be kept secure. Some operations, however, do require super-user access and this can be granted temporarily using the `sudo` command – for example when installing packages see below.
 
 In addition, ever user is a member of a group, which typically by default has the same name as the user. In Linux, each and every file is owned by a single user and a single group, and has its own access permissions.
 
@@ -102,28 +103,24 @@ The most common way to view the permissions of a file is to use `ls` with the lo
 
 Here is an example screenshot of what the output might look like, with labels of each column of output:
 
-![](https://i.imgur.com/MeOSSW7.png)
-
+[![](https://i.imgur.com/MeOSSW7.png){:style="max-width:75%; height:auto; display: block; margin-left: auto; margin-right: auto;"}](https://www.digitalocean.com/community/tutorials/an-introduction-to-linux-permissions#viewing-ownership-and-permissions)
 
 Aside from the *Mode* column, this listing is fairly easy to understand. To help explain what all the groupings and letters mean, take a look at this closeup of the mode of the first file in the example above:
 
-![](https://i.imgur.com/xGklK01.png)
+[![](https://i.imgur.com/xGklK01.png){:style="max-width:60%; height:auto; display: block; margin-left: auto; margin-right: auto;"}](https://www.digitalocean.com/community/tutorials/an-introduction-to-linux-permissions#viewing-ownership-and-permissions)
 
 So for each permission class (user, group and other) its specified if a user can read, write or execute that file. You can change the mode and ownership of a file using the [chmod and chown commands](https://www.pluralsight.com/blog/it-ops/linux-file-permissions).
 
-
-> Newbies will typically hit a lot of errors because a certain file doesn’t have the right permissions set on it. Check this first if you run into trouble.
+**Newbies will typically hit a lot of errors because a certain file doesn’t have the right permissions. Check this first if you run into trouble.**
 
 # Text files
 
-Linux
-![](https://i.imgur.com/LJmcb5c.png)
-Windows
-![](https://i.imgur.com/DcNSrtz.png)
+![](https://i.imgur.com/LJmcb5c.png){:style="max-width:80%; height:auto; "} | ![](https://i.imgur.com/DcNSrtz.png){:style="max-width:80%; height:auto; "}
+<center>Linux</center> | <center>Windows</center>
 
 There is one big difference between Linux and Windows text files: Windows text files use a carriage return followed by a line feed ASCII characters ("\r\n") to dictate the ending of a line, while Unix uses just line feed ("\n").
 
-This can cause a lot of issues when working with text files, especially CSVs, when moving files between Windows and Linux. A lot of programs automatically deal with it while others will not. You can generally convert between the two using a text editor like Notepad++ or Sublime or a command line utility. A typical problem will be all text is rendered on a single line or that extra funny symbols are present in the file.
+This can cause a lot of issues when working with text files, especially CSVs and when moving files between Windows and Linux. A lot of programs automatically deal with it while others will not. You can generally convert between the two using a text editor like [Notepad++](https://notepad-plus-plus.org/) or [Sublime](https://www.sublimetext.com/) or a command line utility. A typical problem will be all text is rendered on a single line or that extra funny symbols are present in the file.
 
 # Installing programs
 
@@ -133,27 +130,34 @@ Most distrbutions come with a package manger for installing programs. For exampl
 sudo apt-get install postgresql
 ```
 
-Thats it! No installation wizards, no downloading. You do however require sudo access as discussed above.
+Thats it! No installation wizards, no downloading. You do however require `sudo` access as discussed above.
 
 __Yer seriously that it 🚀__
 
 # Environment variables
 
-Windows enviroment
-![](https://i.imgur.com/9JRRg0f.png)
-Linus Enviroment
-![](https://i.imgur.com/HNTPmRY.png)
+![](https://i.imgur.com/9JRRg0f.png){:style="max-width:80%; height:auto; "} | ![](https://i.imgur.com/HNTPmRY.png){:style="max-width:80%; height:auto; "}
+<center>Windows enviroment</center> | <center>Linux Enviroment</center>
 
-In Linux each process has its own separate set of environment variables. By default, when a process is created, it inherits a duplicate environment of its parent process, except for explicit changes made by the parent when it creates the child. At the OS-API level, these changes must be done between running fork and exec.
+
+The way Windows and Linux handles enviroment varibles are quite different.
+
+In Linux each process has its own separate set of environment variables. By default, when a process is created, it inherits a duplicate environment of its parent process, except for explicit changes made by the parent when it creates the child. At the OS-API level, these changes must be done between using `fork` and `exec`.
 
 This means that an environment variable that is changed in a script or compiled program will only affect that process and possibly child processes. The parent process and any unrelated processes will not be affected.
 
-This is contrast to Windows, whereby changing an enviroment variable changes the global state in the Windows registry and therefore effects all other programs. This is important as the Windows registry acts like a central DB for the OS which grows larger over time when the user installs more programs. This is the main reason why Windows systems slow up over time and need to be whiped clean.
+This is contrast to Windows, whereby changing an enviroment variable changes the global state in the Windows registry and therefore effects all other programs. This is important as the Windows registry acts like a central database for the OS and running programs which grows larger over time when the user installs more programs. This is one of the reason why Windows systems slow up over time and need to be whiped clean.
 
-> The abstance of the a central DB or registry is one of the main reasons Linux is a much more stable system compared to Windows.
+# Roundup
 
-# Linux in the real world
+Overall Linux and in part Mac, is a more productive, stable and secure enviroment for the dev or data scientist.
 
-How many of the top 500 supper computers do you think are powered by Linux?
+Let me leave you with one last nuget of information... how many of the top 500 supper computers do you think are powered by Linux?
 
-[All of them!](https://www.linuxfoundation.org/blog/linux-runs-all-of-the-worlds-fastest-supercomputers/)
+**[All of them!](https://www.linuxfoundation.org/blog/linux-runs-all-of-the-worlds-fastest-supercomputers/)**
+
+---
+*Josh Levy-Kramer*
+
+Unless otherwise stated, images are attributed via a link
+
