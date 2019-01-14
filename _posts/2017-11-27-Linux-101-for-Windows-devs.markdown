@@ -41,7 +41,7 @@ Because each component can be swapped in or out, a large ecosystem of Linux dist
 * CentOS - 100% RHEL compatible, it's basically a free version of RHEL. Focused on reliability and stability
 * Fedora - RedHat based distro. Focused on quick releases and new features
 
-RHEL used to be the dominant leader, however recently Ubuntu has caught up and [Ubuntu is now the market leader in cloud computing](http://thecloudmarket.com/stats#/totals).
+> RHEL used to be the dominant leader, however recently Ubuntu has caught up and [Ubuntu is now the market leader in cloud computing](http://thecloudmarket.com/stats#/totals).
 
 # Linux terminal
 
@@ -62,7 +62,7 @@ A [full guide to Linux commands](https://www.dedoimedo.com/computers/ultimate-li
 * **Ctrl+R**: Reverse search command history
 * **Ctrl+A**: Go to the beginning of the line
 * **Ctrl+E**: Go to the end of the line.
-* **Grep**: Use in conjunction with a pipe to search a long text output of another process. e.g. to search for python processes currently running "`ps | grep python`"
+* **Grep**: Use in conjunction with a pipe to search a long text output of another process. e.g. to search for python processes currently running `ps | grep python`
 
 # Drives and mounts
 
