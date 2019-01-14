@@ -138,9 +138,8 @@ Thats it! No installation wizards, no downloading. You do however require `sudo`
 
 # Environment variables
 
-![](https://i.imgur.com/9JRRg0f.png){:style="max-width:80%; height:auto; "} | ![](https://i.imgur.com/HNTPmRY.png){:style="max-width:80%; height:auto; "}
+![](https://i.imgur.com/9JRRg0f.png){:style="max-width:75%; height:auto; "} | ![](https://i.imgur.com/HNTPmRY.png){:style="max-width:75%; height:auto; "}
 <center>Windows enviroment</center> | <center>Linux Enviroment</center>
-
 
 The way Windows and Linux handles enviroment varibles are quite different.
 
