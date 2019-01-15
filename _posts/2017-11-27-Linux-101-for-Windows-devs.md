@@ -155,9 +155,15 @@ This is contrast to Windows, whereby changing an enviroment variable changes the
 
 Overall Linux and in part Mac, is a more productive, stable and secure enviroment for the dev or data scientist.
 
-Let me leave you with one last nuget of information... how many of the top 500 supper computers do you think are powered by Linux?
+Let me leave you with one last nuget of information...
 
-**[All of them!](https://www.linuxfoundation.org/blog/linux-runs-all-of-the-worlds-fastest-supercomputers/)**
+
+<details><summary>How many of the top 500 supper computers do you think are powered by Linux?</summary><p>
+<div markdown="1">
+   **[All of them!](https://www.linuxfoundation.org/blog/linux-runs-all-of-the-worlds-fastest-supercomputers/)**
+</div>
+</p></details>
+
 
 ---
 *Josh Levy-Kramer*
