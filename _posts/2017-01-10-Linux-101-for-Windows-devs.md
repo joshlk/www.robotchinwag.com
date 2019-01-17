@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Linux 101 for Windows devs"
-date:   2017-11-27 00:00:00 +0000
+date:   2017-01-10 00:00:00 +0000
 categories: [tooling]
 ---
 
