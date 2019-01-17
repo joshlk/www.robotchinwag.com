@@ -5,6 +5,11 @@ date:   2017-11-27 00:00:00 +0000
 categories: [tooling]
 ---
 
+* points i wanted while transitioning
+* cutting edge coming out of academia only works on linux
+* unix dominates in all areas other that desktops: high performance computing, servers, cloud computing, mobile
+* the one fist that found confusing when starting was the differences and relationships between unix, linux and mac. linux shares same command line shells and file strucutre. unix is a totally seperate oppating system to linux. mac is a BSD OS with its foundations in Linux
+
 This article highlights the key points that Windows developers or power users need to know when starting out on Linux or Mac.
 It is by no means a complete guide - Google is your friend.
 
@@ -26,13 +31,15 @@ In a nutshell...
 
 # Linux, Unix, Mac... whats the difference
 
-[![Simplified history of Unix-like operating systems. Linux shares similar architecture and concepts (as part of the POSIX standard) but does not share non-free source code with the original Unix or MINIX.](https://i.imgur.com/QZBZlWW.png){:style="max-width:75%; height:auto; display: block; margin-left: auto; margin-right: auto;"}](https://en.wikipedia.org/wiki/File:Unix_history.svg)
+[![Linux Distribution Timeline](https://i.imgur.com/7hQtb9h.png){:style="max-width:30%; height:auto; float: right; clear: right;"}](https://en.wikipedia.org/wiki/List_of_Linux_distributions#/media/File:Linux_Distribution_Timeline.svg)
 
-[![Linux Distribution Timeline](https://i.imgur.com/7hQtb9h.png){:style="max-width:12%; height:auto; float: right; clear: right;"}](https://en.wikipedia.org/wiki/List_of_Linux_distributions#/media/File:Linux_Distribution_Timeline.svg)
+[![Simplified history of Unix-like operating systems. Linux shares similar architecture and concepts (as part of the POSIX standard) but does not share non-free source code with the original Unix or MINIX.](https://i.imgur.com/QZBZlWW.png){:style="max-width:70%; height:auto; display: block; "}](https://en.wikipedia.org/wiki/File:Unix_history.svg)
 
 Unix was developed in the 70s and is the base for Linux, Mac and other systems - which are know as UNIX-like - as can been seen in the above timeline.
 
 Linux itself is not one thing - it can colloquially reference to the Linux kernel, a Linux system, or a Linux distribution. In its most technical sense, Linux is just a kernel and ecosystem of components which are compatible with it. Each component can be added or removed at will as the ecosystem is open source and modular by design. For example, you can separate the graphical interface away from the core of the operating system - one does not necessarily come with another. This is not possible in Windows. 
+
+![Linux filesystem strucutre](https://i.imgur.com/jpzglwb.png){:style="max-width:75%; height:auto; display: block; margin-left: auto; margin-right: auto;"}
 
 Because each component can be swapped in or out, a large ecosystem of Linux distributions exists, each with their own unique combination of programs and capabilities. Have a look at the image on the right which shows the vast landscape of different "distros" and how they relate to each other - as you can see the variation is huge. The most important distros are:
 
@@ -78,8 +85,21 @@ Typically, a drive will be [mounted](https://www.lifewire.com/uses-of-linux-comm
 
 Generally, paths are very similar to Windows, here are two examples:
 
+<!-- class="relative-table wrapped confluenceTable" style="width: 37.9852%;margin-left: auto;margin-right: auto;" resolved="" -->
+
+<table >
+<colgroup>
+<col style="width: 19.0244%;">
+<col style="width: 80.9756%;">
+</colgroup>
+<tbody>
+<tr>
+<td><p>Linux</p></td><td class="confluenceTd"><pre>/Users/Josh/git/project/example.txt</pre></td></tr><tr><td colspan="1" class="confluenceTd">Windows</td><td colspan="1" class="confluenceTd"><pre>C:\Users\Josh\git\project\example.txt</pre></td></tr></tbody></table>
+
+<!--
 Linux       |  `/Users/Josh/git/project/example.txt`
 Windows     |  `C:\Users\Josh\git\project\example.txt`
+-->
 
 Things to note:
 
